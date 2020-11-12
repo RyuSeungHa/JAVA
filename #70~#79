@@ -1,0 +1,193 @@
+//70
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		switch (sc.nextInt()) {
+		case 12:
+		case 1:
+		case 2:
+			System.out.println("winter");
+			break;
+		case 3:
+		case 4:
+		case 5:
+			System.out.println("spring");
+			break;
+		case 6:
+		case 7:
+		case 8:
+			System.out.println("summer");
+			break;
+		case 9:
+		case 10:
+		case 11:
+			System.out.println("fall");
+			break;
+
+		default:
+			break;
+		}
+	}
+}
+//71
+import java.util.Scanner;
+
+public class Main {
+
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String a = sc.nextLine();
+		String[] b = a.split(" ");
+		for (int i = 0; i < b.length; i++) {
+			if(!b[i].equals("0")) {
+				System.out.println(b[i]);
+			} else {break;}
+			
+		}
+		
+	}
+}
+//72
+import java.util.Scanner;
+
+public class Main {
+
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int[] b = new int[a];
+		for (int i = 0; i < b.length; i++) {
+			b[i] = sc.nextInt();
+			System.out.println(b[i]);
+		}
+		
+	}
+}
+//73
+import java.util.Scanner;
+
+public class Main {
+
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String aa = sc.nextLine();
+		String[] aaa = aa.split(" ");
+		for (int i = 0; i < aaa.length; i++) {
+			if (aaa[i].equals("0")) {
+				break;
+			}
+			System.out.println(aaa[i]);
+		}
+		
+	}
+}
+//74
+import java.util.Scanner;
+
+public class Main {
+
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		for (int i = a; i > 0; i--) {
+			System.out.println(a);
+			a--;
+		}
+	}
+}
+//75
+import java.util.Scanner;
+
+public class Main {
+
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		for (int i = a-1; i >= 0; i--) {
+			System.out.println(i);
+		}
+
+	}
+}
+//76
+import java.util.Scanner;
+
+public class Main {
+
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String[] alpha = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
+		String a = sc.next();
+		for (int i = 0; i < alpha.length; i++) {
+			System.out.print(alpha[i]+" ");
+			if (a.equals(alpha[i])) {
+				break;
+			}
+		}
+
+	}
+}
+//77
+import java.util.Scanner;
+
+public class Main {
+
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		
+		for (int i = 0; i <= a; i++) {
+			System.out.println(i);
+		}
+	}
+}
+//78
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = 0;
+		for (int i = 0; i <= a; i++) {
+			if(i%2==0) {
+				b = b+i;
+			}else {b=b;}
+		}
+		System.out.println(b);
+	}
+
+}
+//79
+import java.util.Scanner;
+
+public class Main {
+
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String aa = sc.nextLine();
+		String[] a = aa.split(" ");
+		for (int i = 0; i < a.length; i++) {
+			System.out.println(a[i]);
+			if(a[i].equals("q")) {
+				break;
+			}
+		}
+		
+
+
+	}
+}
