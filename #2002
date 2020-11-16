@@ -1,0 +1,40 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main {
+
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String[] alpha = {
+				"A", "B", "C", "D", "E", "F", 
+				"G", "H", "I", "J", "K", "L",
+				"M", "N", "O", "P", "Q", "R", "S",
+				"T", "U", "V", "W", "X", "Y", "Z"};
+		int aa = sc.nextInt();
+		String[] text = sc.next().split("");
+		
+		int num = 0;
+		int lll = 0;
+		for(String i : text) {
+			lll++;
+			for(String j : alpha) {
+				num++;
+				if (i.equals(j)) {
+					int ans = (3*lll)+aa;
+					if(num-ans<1) {
+						System.out.print(alpha[num-ans+25]);
+					}else {
+						System.out.print(alpha[num-ans-1]);
+					}
+					
+					num=0;
+					
+					break;
+				}
+			}
+		}
+		
+	}
+}
